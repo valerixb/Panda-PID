@@ -1,0 +1,644 @@
+# Vivado resource utilization data is represented in anytable format
+# The data will be consumed by Resource Utilization flow in SysGen.
+
+{
+   'Design_Information' => [
+     { 
+        'PART' => 'xc7z030sbg485-1',
+        'Vivado_Stage' => 'Post Synthesis',
+        'Top_Module' => 'pidmc',
+        'HDL_Language' => 'vhdl',
+        'Netlist_Crossprobe_File' => 'pidmc.vhd.at',
+     },
+   ],
+   'Device_Resources' => [
+     { 
+        'BRAMs' => '265',
+        'DSPs' => '400',
+        'Registers' => '157200',
+        'LUTs' => '78600',
+     },
+   ],
+   'Resource_Utilization_Data' => [
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_129',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.addsub',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/addsub',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 9,
+                    'LUT2' => 34,
+                    'LUT3' => 36,
+                    'LUT4' => 30,
+                    'Total_LUTs' => 100,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_160',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.addsub1',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/addsub1',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 17,
+                    'LUT2' => 65,
+                    'LUT3' => 63,
+                    'Total_LUTs' => 128,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_191',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.addsub2',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/addsub2',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 17,
+                    'LUT2' => 65,
+                    'LUT3' => 63,
+                    'Total_LUTs' => 128,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_222',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.addsub3',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/addsub3',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 17,
+                    'LUT2' => 65,
+                    'LUT3' => 63,
+                    'Total_LUTs' => 128,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_253',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.addsub4',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/addsub4',
+          'Primitives' => [ 
+               {
+                    'LUT3' => 32,
+                    'CARRY4' => 9,
+                    'LUT2' => 34,
+                    'Total_LUTs' => 66,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_284',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.addsub5',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/addsub5',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 17,
+                    'LUT2' => 65,
+                    'LUT3' => 63,
+                    'Total_LUTs' => 128,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_315',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.addsub6',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/addsub6',
+          'Primitives' => [ 
+               {
+                    'LUT3' => 63,
+                    'CARRY4' => 19,
+                    'LUT2' => 42,
+                    'Total_LUTs' => 105,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_469',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.delay',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/delay',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 64,
+                    'Total_Registers' => 64,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_479',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.delay1',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/delay1',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 33,
+                    'Total_Registers' => 33,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_489',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.delay2',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/delay2',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 64,
+                    'Total_Registers' => 64,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_499',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.delay3',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/delay3',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 64,
+                    'Total_Registers' => 64,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_509',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.delay4',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/delay4',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 64,
+                    'Total_Registers' => 64,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_519',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.delay5',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/delay5',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 57,
+                    'Total_Registers' => 57,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_529',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.down_sample',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/down_sample',
+          'Primitives' => [ 
+               {
+                    'LUT3' => 1,
+                    'LUT5' => 33,
+                    'CARRY4' => 1,
+                    'LUT4' => 3,
+                    'LUT6' => 93,
+                    'LUT1' => 31,
+                    'FDRE' => 32,
+                    'Total_LUTs' => 161,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_553',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.down_sample1',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/down_sample1',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 1,
+                    'LUT1' => 31,
+                    'FDRE' => 32,
+                    'Total_LUTs' => 31,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_577',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.down_sample10',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/down_sample10',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 32,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_601',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.down_sample11',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/down_sample11',
+          'Primitives' => [ 
+               {
+                    'LUT6' => 62,
+                    'LUT1' => 31,
+                    'FDRE' => 32,
+                    'LUT4' => 31,
+                    'LUT3' => 1,
+                    'LUT5' => 1,
+                    'CARRY4' => 1,
+                    'LUT2' => 2,
+                    'Total_LUTs' => 128,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_625',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.down_sample12',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/down_sample12',
+          'Primitives' => [ 
+               {
+                    'LUT2' => 1,
+                    'FDRE' => 1,
+                    'Total_LUTs' => 1,
+                    'Total_Registers' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_649',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.down_sample13',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/down_sample13',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 1,
+                    'Total_Registers' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_673',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.down_sample2',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/down_sample2',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 1,
+                    'Total_Registers' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_697',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.down_sample3',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/down_sample3',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 1,
+                    'Total_Registers' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_721',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.down_sample4',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/down_sample4',
+          'Primitives' => [ 
+               {
+                    'LUT1' => 32,
+                    'FDRE' => 32,
+                    'LUT4' => 16,
+                    'LUT3' => 2,
+                    'LUT2' => 2,
+                    'Total_LUTs' => 52,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_745',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.down_sample5',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/down_sample5',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 32,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_769',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.down_sample6',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/down_sample6',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 31,
+                    'Total_Registers' => 31,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_793',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.down_sample7',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/down_sample7',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 32,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_817',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.down_sample8',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/down_sample8',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 1,
+                    'Total_Registers' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_841',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.down_sample9',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/down_sample9',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 32,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_874',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.mult',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/mult',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 166,
+                    'LUT2' => 636,
+                    'LUT1' => 9,
+                    'DSP48E1' => 1,
+                    'LUT4' => 289,
+                    'LUT3' => 14,
+                    'LUT5' => 57,
+                    'Total_LUTs' => 1005,
+                    'Total_DSPs' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_911',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.mult1',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/mult1',
+          'Primitives' => [ 
+               {
+                    'DSP48E1' => 8,
+                    'LUT6' => 64,
+                    'LUT5' => 4,
+                    'Total_DSPs' => 8,
+                    'Total_LUTs' => 68,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_948',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.mult2',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/mult2',
+          'Primitives' => [ 
+               {
+                    'LUT6' => 42,
+                    'LUT5' => 4,
+                    'CARRY4' => 176,
+                    'LUT2' => 631,
+                    'DSP48E1' => 1,
+                    'LUT4' => 292,
+                    'LUT3' => 40,
+                    'LUT1' => 5,
+                    'Total_LUTs' => 1014,
+                    'Total_DSPs' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_985',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.mult3',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/mult3',
+          'Primitives' => [ 
+               {
+                    'LUT3' => 63,
+                    'CARRY4' => 17,
+                    'LUT1' => 1,
+                    'DSP48E1' => 8,
+                    'LUT5' => 1,
+                    'LUT6' => 7,
+                    'Total_LUTs' => 72,
+                    'Total_DSPs' => 8,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_1022',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.mult4',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/mult4',
+          'Primitives' => [ 
+               {
+                    'DSP48E1' => 8,
+                    'LUT4' => 63,
+                    'Total_DSPs' => 8,
+                    'Total_LUTs' => 63,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_1069',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.mux1',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/mux1',
+          'Primitives' => [ 
+               {
+                    'LUT3' => 1,
+                    'LUT5' => 31,
+                    'Total_LUTs' => 32,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_1139',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.negate',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/negate',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 8,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_1147',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.negate1',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/negate1',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 8,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_1155',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.negate2',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/negate2',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 8,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_1163',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.negate3',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/negate3',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 8,
+                    'LUT4' => 14,
+                    'Total_LUTs' => 14,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_1202',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.pi_summer',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/pi_summer',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 17,
+                    'LUT2' => 65,
+                    'LUT3' => 63,
+                    'Total_LUTs' => 128,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_1171',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.pid_summer',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/pid_summer',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 17,
+                    'LUT2' => 66,
+                    'LUT3' => 63,
+                    'LUT6' => 123,
+                    'LUT5' => 4,
+                    'LUT4' => 32,
+                    'Total_LUTs' => 288,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_1233',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.relational',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/relational',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 8,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_1242',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.relational1',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/relational1',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 5,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_1251',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.relational2',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/relational2',
+          'Primitives' => [ 
+               {
+                    'LUT2' => 1,
+                    'CARRY4' => 5,
+                    'Total_LUTs' => 1,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_1260',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.relational3',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/relational3',
+          'Primitives' => [ 
+               {
+                    'CARRY4' => 5,
+               },
+          ], 
+     },
+     {
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_1269',
+          'Hier_Name' => 'pidmc_bd_wrapper.pidmc_bd_i.pidmc_1.U0.pidmc_struct.up_sample',
+          'Cell_Name' => 'pidmc_bd_i/pidmc_1/U0/pidmc_struct/up_sample',
+          'Primitives' => [ 
+               {
+                    'FDRE' => 32,
+                    'Total_Registers' => 32,
+               },
+          ], 
+     },
+     { 
+          'File_Name' => 'pidmc.vhd',
+          'Line_Num' => 'Line_000',
+          'Hier_Name' => 'pidmc',
+          'Cell_Name' => 'pidmc',
+          'Primitives' => [ 
+               { 
+                    'CARRY4' => 556,
+                    'LUT2' => 1774,
+                    'LUT3' => 631,
+                    'LUT4' => 770,
+                    'FDRE' => 670,
+                    'LUT5' => 135,
+                    'LUT6' => 391,
+                    'LUT1' => 140,
+                    'DSP48E1' => 26,
+                    'Total_LUTs' => 3841,
+                    'Total_Registers' => 670,
+                    'Total_DSPs' => 26,
+               },
+          ],
+     },
+   ],
+} 

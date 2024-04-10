@@ -1,0 +1,367 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x7F31A9651284E0B4",
+      "design_src": "SYSGEN",
+      "device": "xc7z030sbg485-1",
+      "gen_directory": "../../../../pidmc.gen/sources_1/bd/pidmc_bd",
+      "name": "pidmc_bd",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "pidmc_1": ""
+    },
+    "ports": {
+      "aiw_g": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "ce": {
+        "type": "ce",
+        "direction": "I",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "ce_out": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "pidmc_bd_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "clr": {
+        "type": "data",
+        "direction": "I",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "command_in": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "control_out": {
+        "type": "data",
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "g1d": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "g2d": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "gi": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "inv_command": {
+        "type": "data",
+        "direction": "I",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "inv_meas": {
+        "type": "data",
+        "direction": "I",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "kp": {
+        "type": "data",
+        "direction": "I",
+        "left": "30",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "meas_in": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "pv_deriv": {
+        "type": "data",
+        "direction": "I",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "res": {
+        "type": "data",
+        "direction": "I",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "sat_limit": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "thr_in": {
+        "type": "data",
+        "direction": "I",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "pidmc_1": {
+        "vlnv": "MaxIV:Panda_ModelComp:pidmc:1.0",
+        "ip_revision": "339851697",
+        "xci_name": "pidmc_bd_pidmc_1_0",
+        "xci_path": "ip/pidmc_bd_pidmc_1_0/pidmc_bd_pidmc_1_0.xci",
+        "inst_hier_path": "pidmc_1"
+      }
+    },
+    "nets": {
+      "aiw_g_1": {
+        "ports": [
+          "aiw_g",
+          "pidmc_1/aiw_g"
+        ]
+      },
+      "ce_1": {
+        "ports": [
+          "ce",
+          "pidmc_1/ce"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "pidmc_1/clk"
+        ]
+      },
+      "clr_1": {
+        "ports": [
+          "clr",
+          "pidmc_1/clr"
+        ]
+      },
+      "command_in_1": {
+        "ports": [
+          "command_in",
+          "pidmc_1/command_in"
+        ]
+      },
+      "g1d_1": {
+        "ports": [
+          "g1d",
+          "pidmc_1/g1d"
+        ]
+      },
+      "g2d_1": {
+        "ports": [
+          "g2d",
+          "pidmc_1/g2d"
+        ]
+      },
+      "gi_1": {
+        "ports": [
+          "gi",
+          "pidmc_1/gi"
+        ]
+      },
+      "inv_command_1": {
+        "ports": [
+          "inv_command",
+          "pidmc_1/inv_command"
+        ]
+      },
+      "inv_meas_1": {
+        "ports": [
+          "inv_meas",
+          "pidmc_1/inv_meas"
+        ]
+      },
+      "kp_1": {
+        "ports": [
+          "kp",
+          "pidmc_1/kp"
+        ]
+      },
+      "meas_in_1": {
+        "ports": [
+          "meas_in",
+          "pidmc_1/meas_in"
+        ]
+      },
+      "pidmc_1_ce_out": {
+        "ports": [
+          "pidmc_1/ce_out",
+          "ce_out"
+        ]
+      },
+      "pidmc_1_control_out": {
+        "ports": [
+          "pidmc_1/control_out",
+          "control_out"
+        ]
+      },
+      "pv_deriv_1": {
+        "ports": [
+          "pv_deriv",
+          "pidmc_1/pv_deriv"
+        ]
+      },
+      "res_1": {
+        "ports": [
+          "res",
+          "pidmc_1/res"
+        ]
+      },
+      "sat_limit_1": {
+        "ports": [
+          "sat_limit",
+          "pidmc_1/sat_limit"
+        ]
+      },
+      "thr_in_1": {
+        "ports": [
+          "thr_in",
+          "pidmc_1/thr_in"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1016 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Feb 26 11:15:59 2024
+# Process ID: 4119
+# Current directory: /xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.runs/pidmc_bd_pidmc_1_0_synth_1
+# Command line: vivado -log pidmc_bd_pidmc_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pidmc_bd_pidmc_1_0.tcl
+# Log file: /xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.runs/pidmc_bd_pidmc_1_0_synth_1/pidmc_bd_pidmc_1_0.vds
+# Journal file: /xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.runs/pidmc_bd_pidmc_1_0_synth_1/vivado.jou
+# Running On: ub2020p4p3vm, OS: Linux, CPU Frequency: 1992.001 MHz, CPU Physical cores: 3, Host memory: 10437 MB
+#-----------------------------------------------------------
+source pidmc_bd_pidmc_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1349.754 ; gain = 0.023 ; free physical = 238 ; free virtual = 24471
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.runs/pidmc_bd_pidmc_1_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: pidmc_bd_pidmc_1_0
+Command: synth_design -top pidmc_bd_pidmc_1_0 -part xc7z030sbg485-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z030'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z030'
+INFO: [Device 21-403] Loading part xc7z030sbg485-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4135
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2134.750 ; gain = 404.715 ; free physical = 129 ; free virtual = 23440
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'pidmc_bd_pidmc_1_0' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/synth/pidmc_bd_pidmc_1_0.vhd:82]
+INFO: [Synth 8-3491] module 'pidmc' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc.vhd:1340' bound to instance 'U0' of component 'pidmc' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/synth/pidmc_bd_pidmc_1_0.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'pidmc' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc.vhd:1362]
+INFO: [Synth 8-638] synthesizing module 'pidmc_default_clock_driver' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc.vhd:1308]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/xlclockdriver_rd.vhd:59]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_w_init.vhd:31' bound to instance 'clr_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/xlclockdriver_rd.vhd:236]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_w_init.vhd:47]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+INFO: [Synth 8-3491] module 'single_reg_w_init' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/single_reg_w_init.vhd:22' bound to instance 'reg_comp' of component 'single_reg_w_init' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_w_init.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-113] binding component instance 'fdre_comp' to cell 'FDRE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/single_reg_w_init.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/single_reg_w_init.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_w_init.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/xlclockdriver_rd.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver__parameterized0' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/xlclockdriver_rd.vhd:59]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_w_init.vhd:31' bound to instance 'clr_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/xlclockdriver_rd.vhd:236]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/xlclockdriver_rd.vhd:262]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/xlclockdriver_rd.vhd:291]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 4'b0000 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_w_init' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_w_init.vhd:31' bound to instance 'ce_logic_reg' of component 'synth_reg_w_init' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/xlclockdriver_rd.vhd:291]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver__parameterized0' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/xlclockdriver_rd.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_default_clock_driver' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc.vhd:1308]
+INFO: [Synth 8-638] synthesizing module 'pidmc_struct' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xladdsub' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1422]
+INFO: [Synth 8-3491] module 'pidmc_c_addsub_v12_0_i0' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i0/synth/pidmc_c_addsub_v12_0_i0.vhd:59' bound to instance 'core_instance0' of component 'pidmc_c_addsub_v12_0_i0' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1527]
+INFO: [Synth 8-638] synthesizing module 'pidmc_c_addsub_v12_0_i0' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i0/synth/pidmc_c_addsub_v12_0_i0.vhd:67]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 33 - type: integer 
+	Parameter C_B_WIDTH bound to: 33 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 33 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_ADD_MODE bound to: 1 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_16' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i4/hdl/c_addsub_v12_0_vh_rfs.vhd:7006' bound to instance 'U0' of component 'c_addsub_v12_0_16' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i0/synth/pidmc_c_addsub_v12_0_i0.vhd:130]
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-256] done synthesizing module 'pidmc_c_addsub_v12_0_i0' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i0/synth/pidmc_c_addsub_v12_0_i0.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xladdsub' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1422]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xladdsub__parameterized0' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1422]
+INFO: [Synth 8-3491] module 'pidmc_c_addsub_v12_0_i1' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i1/synth/pidmc_c_addsub_v12_0_i1.vhd:59' bound to instance 'core_instance1' of component 'pidmc_c_addsub_v12_0_i1' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1536]
+INFO: [Synth 8-638] synthesizing module 'pidmc_c_addsub_v12_0_i1' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i1/synth/pidmc_c_addsub_v12_0_i1.vhd:67]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 65 - type: integer 
+	Parameter C_B_WIDTH bound to: 65 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 65 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_ADD_MODE bound to: 0 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 00000000000000000000000000000000000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_16' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i4/hdl/c_addsub_v12_0_vh_rfs.vhd:7006' bound to instance 'U0' of component 'c_addsub_v12_0_16' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i1/synth/pidmc_c_addsub_v12_0_i1.vhd:130]
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-256] done synthesizing module 'pidmc_c_addsub_v12_0_i1' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i1/synth/pidmc_c_addsub_v12_0_i1.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xladdsub__parameterized0' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1422]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xladdsub__parameterized1' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1422]
+INFO: [Synth 8-3491] module 'pidmc_c_addsub_v12_0_i1' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i1/synth/pidmc_c_addsub_v12_0_i1.vhd:59' bound to instance 'core_instance1' of component 'pidmc_c_addsub_v12_0_i1' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1536]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xladdsub__parameterized1' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1422]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xladdsub__parameterized2' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1422]
+INFO: [Synth 8-3491] module 'pidmc_c_addsub_v12_0_i2' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i2/synth/pidmc_c_addsub_v12_0_i2.vhd:59' bound to instance 'core_instance2' of component 'pidmc_c_addsub_v12_0_i2' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1545]
+INFO: [Synth 8-638] synthesizing module 'pidmc_c_addsub_v12_0_i2' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i2/synth/pidmc_c_addsub_v12_0_i2.vhd:67]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 65 - type: integer 
+	Parameter C_B_WIDTH bound to: 65 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 65 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_ADD_MODE bound to: 1 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 00000000000000000000000000000000000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_16' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i4/hdl/c_addsub_v12_0_vh_rfs.vhd:7006' bound to instance 'U0' of component 'c_addsub_v12_0_16' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i2/synth/pidmc_c_addsub_v12_0_i2.vhd:130]
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-256] done synthesizing module 'pidmc_c_addsub_v12_0_i2' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i2/synth/pidmc_c_addsub_v12_0_i2.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xladdsub__parameterized2' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1422]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xladdsub__parameterized3' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1422]
+INFO: [Synth 8-3491] module 'pidmc_c_addsub_v12_0_i3' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i3/synth/pidmc_c_addsub_v12_0_i3.vhd:59' bound to instance 'core_instance3' of component 'pidmc_c_addsub_v12_0_i3' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1554]
+INFO: [Synth 8-638] synthesizing module 'pidmc_c_addsub_v12_0_i3' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i3/synth/pidmc_c_addsub_v12_0_i3.vhd:67]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 34 - type: integer 
+	Parameter C_B_WIDTH bound to: 34 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 34 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_ADD_MODE bound to: 1 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 0000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_16' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i4/hdl/c_addsub_v12_0_vh_rfs.vhd:7006' bound to instance 'U0' of component 'c_addsub_v12_0_16' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i3/synth/pidmc_c_addsub_v12_0_i3.vhd:130]
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-256] done synthesizing module 'pidmc_c_addsub_v12_0_i3' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i3/synth/pidmc_c_addsub_v12_0_i3.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xladdsub__parameterized3' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1422]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xladdsub__parameterized4' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1422]
+INFO: [Synth 8-3491] module 'pidmc_c_addsub_v12_0_i4' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i4/synth/pidmc_c_addsub_v12_0_i4.vhd:59' bound to instance 'core_instance4' of component 'pidmc_c_addsub_v12_0_i4' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1563]
+INFO: [Synth 8-638] synthesizing module 'pidmc_c_addsub_v12_0_i4' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i4/synth/pidmc_c_addsub_v12_0_i4.vhd:67]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_IMPLEMENTATION bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 73 - type: integer 
+	Parameter C_B_WIDTH bound to: 73 - type: integer 
+	Parameter C_OUT_WIDTH bound to: 73 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_ADD_MODE bound to: 0 - type: integer 
+	Parameter C_B_CONSTANT bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 0000000000000000000000000000000000000000000000000000000000000000000000000 - type: string 
+	Parameter C_AINIT_VAL bound to: 0 - type: string 
+	Parameter C_SINIT_VAL bound to: 0 - type: string 
+	Parameter C_CE_OVERRIDES_BYPASS bound to: 1 - type: integer 
+	Parameter C_BYPASS_LOW bound to: 0 - type: integer 
+	Parameter C_SCLR_OVERRIDES_SSET bound to: 1 - type: integer 
+	Parameter C_HAS_C_IN bound to: 0 - type: integer 
+	Parameter C_HAS_C_OUT bound to: 0 - type: integer 
+	Parameter C_BORROW_LOW bound to: 1 - type: integer 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_BYPASS bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_HAS_SSET bound to: 0 - type: integer 
+	Parameter C_HAS_SINIT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'c_addsub_v12_0_16' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i4/hdl/c_addsub_v12_0_vh_rfs.vhd:7006' bound to instance 'U0' of component 'c_addsub_v12_0_16' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i4/synth/pidmc_c_addsub_v12_0_i4.vhd:130]
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-256] done synthesizing module 'pidmc_c_addsub_v12_0_i4' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_c_addsub_v12_0_i4/synth/pidmc_c_addsub_v12_0_i4.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xladdsub__parameterized4' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1422]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xlceprobe' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:72]
+INFO: [Synth 8-113] binding component instance 'buf_comp' to cell 'BUF' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xlceprobe' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_93e768b169' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_93e768b169' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xlconvert' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:194]
+	Parameter din_width bound to: 32 - type: integer 
+	Parameter din_bin_pt bound to: 30 - type: integer 
+	Parameter din_arith bound to: 2 - type: integer 
+	Parameter dout_width bound to: 33 - type: integer 
+	Parameter dout_bin_pt bound to: 31 - type: integer 
+	Parameter dout_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'convert_func_call_pidmc_xlconvert' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:138' bound to instance 'convert' of component 'convert_func_call_pidmc_xlconvert' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'convert_func_call_pidmc_xlconvert' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'convert_func_call_pidmc_xlconvert' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xlconvert' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xlconvert__parameterized0' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:194]
+	Parameter din_width bound to: 33 - type: integer 
+	Parameter din_bin_pt bound to: 31 - type: integer 
+	Parameter din_arith bound to: 2 - type: integer 
+	Parameter dout_width bound to: 64 - type: integer 
+	Parameter dout_bin_pt bound to: 54 - type: integer 
+	Parameter dout_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 2 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'convert_func_call_pidmc_xlconvert' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:138' bound to instance 'convert' of component 'convert_func_call_pidmc_xlconvert' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'convert_func_call_pidmc_xlconvert__parameterized1' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'convert_func_call_pidmc_xlconvert__parameterized1' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xlconvert__parameterized0' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xlconvert__parameterized1' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:194]
+	Parameter din_width bound to: 64 - type: integer 
+	Parameter din_bin_pt bound to: 62 - type: integer 
+	Parameter din_arith bound to: 2 - type: integer 
+	Parameter dout_width bound to: 32 - type: integer 
+	Parameter dout_bin_pt bound to: 31 - type: integer 
+	Parameter dout_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'convert_func_call_pidmc_xlconvert' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:138' bound to instance 'convert' of component 'convert_func_call_pidmc_xlconvert' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'convert_func_call_pidmc_xlconvert__parameterized3' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'convert_func_call_pidmc_xlconvert__parameterized3' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xlconvert__parameterized1' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xlconvert__parameterized2' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:194]
+	Parameter din_width bound to: 31 - type: integer 
+	Parameter din_bin_pt bound to: 23 - type: integer 
+	Parameter din_arith bound to: 1 - type: integer 
+	Parameter dout_width bound to: 32 - type: integer 
+	Parameter dout_bin_pt bound to: 23 - type: integer 
+	Parameter dout_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'convert_func_call_pidmc_xlconvert' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:138' bound to instance 'convert' of component 'convert_func_call_pidmc_xlconvert' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'convert_func_call_pidmc_xlconvert__parameterized5' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'convert_func_call_pidmc_xlconvert__parameterized5' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xlconvert__parameterized2' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xlconvert__parameterized3' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:194]
+	Parameter din_width bound to: 32 - type: integer 
+	Parameter din_bin_pt bound to: 25 - type: integer 
+	Parameter din_arith bound to: 1 - type: integer 
+	Parameter dout_width bound to: 33 - type: integer 
+	Parameter dout_bin_pt bound to: 25 - type: integer 
+	Parameter dout_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 2 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'convert_func_call_pidmc_xlconvert' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:138' bound to instance 'convert' of component 'convert_func_call_pidmc_xlconvert' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'convert_func_call_pidmc_xlconvert__parameterized7' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'convert_func_call_pidmc_xlconvert__parameterized7' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xlconvert__parameterized3' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'sysgen_delay_ad5e453ba8' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:299]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_delay_ad5e453ba8' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'sysgen_delay_99e5ab6f35' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:365]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_delay_99e5ab6f35' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:365]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xldsamp' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:482]
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_reg' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_reg.vhd:18' bound to instance 'latency_pipe' of component 'synth_reg_reg' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:606]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_reg' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_reg.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_reg' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_reg.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xldsamp' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:482]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xldsamp__parameterized0' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:482]
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_reg' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_reg.vhd:18' bound to instance 'latency_pipe' of component 'synth_reg_reg' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:606]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xldsamp__parameterized0' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:482]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xldsamp__parameterized1' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:482]
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_reg' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_reg.vhd:18' bound to instance 'latency_pipe' of component 'synth_reg_reg' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:606]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xldsamp__parameterized1' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:482]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xldsamp__parameterized2' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:482]
+	Parameter width bound to: 1 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_reg' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_reg.vhd:18' bound to instance 'latency_pipe' of component 'synth_reg_reg' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:606]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_reg__parameterized2' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_reg.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_reg__parameterized2' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_reg.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xldsamp__parameterized2' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:482]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xldsamp__parameterized3' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:482]
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_reg' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_reg.vhd:18' bound to instance 'latency_pipe' of component 'synth_reg_reg' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:606]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xldsamp__parameterized3' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:482]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xldsamp__parameterized4' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:482]
+	Parameter width bound to: 31 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_reg' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_reg.vhd:18' bound to instance 'latency_pipe' of component 'synth_reg_reg' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:606]
+INFO: [Synth 8-638] synthesizing module 'synth_reg_reg__parameterized4' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_reg.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_reg__parameterized4' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_reg.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xldsamp__parameterized4' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:482]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xldsamp__parameterized5' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:482]
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg_reg' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg_reg.vhd:18' bound to instance 'latency_pipe' of component 'synth_reg_reg' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:606]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xldsamp__parameterized5' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:482]
+INFO: [Synth 8-638] synthesizing module 'sysgen_logical_380a89577d' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:640]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_logical_380a89577d' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:640]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xlmult' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1717]
+INFO: [Synth 8-3491] module 'pidmc_mult_gen_v12_0_i0' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i0/synth/pidmc_mult_gen_v12_0_i0.vhd:59' bound to instance 'core_instance0' of component 'pidmc_mult_gen_v12_0_i0' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1808]
+INFO: [Synth 8-638] synthesizing module 'pidmc_mult_gen_v12_0_i0' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i0/synth/pidmc_mult_gen_v12_0_i0.vhd:67]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i0/synth/pidmc_mult_gen_v12_0_i0.vhd:70]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i0/synth/pidmc_mult_gen_v12_0_i0.vhd:70]
+WARNING: [Synth 8-5640] Port 'pcasc_ext' is missing in component declaration [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i0/synth/pidmc_mult_gen_v12_0_i0.vhd:70]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 33 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 64 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_19' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i4/hdl/mult_gen_v12_0_vh_rfs.vhd:21510' bound to instance 'U0' of component 'mult_gen_v12_0_19' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i0/synth/pidmc_mult_gen_v12_0_i0.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_mult_gen_v12_0_i0' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i0/synth/pidmc_mult_gen_v12_0_i0.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xlmult' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1717]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xlmult__parameterized0' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1717]
+INFO: [Synth 8-3491] module 'pidmc_mult_gen_v12_0_i1' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i1/synth/pidmc_mult_gen_v12_0_i1.vhd:59' bound to instance 'core_instance1' of component 'pidmc_mult_gen_v12_0_i1' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1817]
+INFO: [Synth 8-638] synthesizing module 'pidmc_mult_gen_v12_0_i1' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i1/synth/pidmc_mult_gen_v12_0_i1.vhd:67]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i1/synth/pidmc_mult_gen_v12_0_i1.vhd:70]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i1/synth/pidmc_mult_gen_v12_0_i1.vhd:70]
+WARNING: [Synth 8-5640] Port 'pcasc_ext' is missing in component declaration [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i1/synth/pidmc_mult_gen_v12_0_i1.vhd:70]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 33 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 96 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_19' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i4/hdl/mult_gen_v12_0_vh_rfs.vhd:21510' bound to instance 'U0' of component 'mult_gen_v12_0_19' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i1/synth/pidmc_mult_gen_v12_0_i1.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_mult_gen_v12_0_i1' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i1/synth/pidmc_mult_gen_v12_0_i1.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xlmult__parameterized0' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1717]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xlmult__parameterized1' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1717]
+INFO: [Synth 8-3491] module 'pidmc_mult_gen_v12_0_i2' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i2/synth/pidmc_mult_gen_v12_0_i2.vhd:59' bound to instance 'core_instance2' of component 'pidmc_mult_gen_v12_0_i2' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1826]
+INFO: [Synth 8-638] synthesizing module 'pidmc_mult_gen_v12_0_i2' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i2/synth/pidmc_mult_gen_v12_0_i2.vhd:67]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i2/synth/pidmc_mult_gen_v12_0_i2.vhd:70]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i2/synth/pidmc_mult_gen_v12_0_i2.vhd:70]
+WARNING: [Synth 8-5640] Port 'pcasc_ext' is missing in component declaration [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i2/synth/pidmc_mult_gen_v12_0_i2.vhd:70]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 33 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TYPE bound to: 1 - type: integer 
+	Parameter C_OUT_HIGH bound to: 64 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_19' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i4/hdl/mult_gen_v12_0_vh_rfs.vhd:21510' bound to instance 'U0' of component 'mult_gen_v12_0_19' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i2/synth/pidmc_mult_gen_v12_0_i2.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_mult_gen_v12_0_i2' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i2/synth/pidmc_mult_gen_v12_0_i2.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xlmult__parameterized1' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1717]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xlmult__parameterized2' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1717]
+INFO: [Synth 8-3491] module 'pidmc_mult_gen_v12_0_i3' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i3/synth/pidmc_mult_gen_v12_0_i3.vhd:59' bound to instance 'core_instance3' of component 'pidmc_mult_gen_v12_0_i3' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1835]
+INFO: [Synth 8-638] synthesizing module 'pidmc_mult_gen_v12_0_i3' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i3/synth/pidmc_mult_gen_v12_0_i3.vhd:67]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i3/synth/pidmc_mult_gen_v12_0_i3.vhd:70]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i3/synth/pidmc_mult_gen_v12_0_i3.vhd:70]
+WARNING: [Synth 8-5640] Port 'pcasc_ext' is missing in component declaration [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i3/synth/pidmc_mult_gen_v12_0_i3.vhd:70]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TYPE bound to: 1 - type: integer 
+	Parameter C_OUT_HIGH bound to: 95 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_19' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i4/hdl/mult_gen_v12_0_vh_rfs.vhd:21510' bound to instance 'U0' of component 'mult_gen_v12_0_19' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i3/synth/pidmc_mult_gen_v12_0_i3.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_mult_gen_v12_0_i3' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i3/synth/pidmc_mult_gen_v12_0_i3.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xlmult__parameterized2' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1717]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xlmult__parameterized3' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1717]
+INFO: [Synth 8-3491] module 'pidmc_mult_gen_v12_0_i4' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i4/synth/pidmc_mult_gen_v12_0_i4.vhd:59' bound to instance 'core_instance4' of component 'pidmc_mult_gen_v12_0_i4' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1844]
+INFO: [Synth 8-638] synthesizing module 'pidmc_mult_gen_v12_0_i4' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i4/synth/pidmc_mult_gen_v12_0_i4.vhd:67]
+WARNING: [Synth 8-5640] Port 'zero_detect' is missing in component declaration [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i4/synth/pidmc_mult_gen_v12_0_i4.vhd:70]
+WARNING: [Synth 8-5640] Port 'pcasc' is missing in component declaration [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i4/synth/pidmc_mult_gen_v12_0_i4.vhd:70]
+WARNING: [Synth 8-5640] Port 'pcasc_ext' is missing in component declaration [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i4/synth/pidmc_mult_gen_v12_0_i4.vhd:70]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_MODEL_TYPE bound to: 0 - type: integer 
+	Parameter C_OPTIMIZE_GOAL bound to: 1 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_CE bound to: 0 - type: integer 
+	Parameter C_HAS_SCLR bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_OUT_HIGH bound to: 95 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_MULT_TYPE bound to: 1 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_CCM_IMP bound to: 0 - type: integer 
+	Parameter C_B_VALUE bound to: 10000001 - type: string 
+	Parameter C_HAS_ZERO_DETECT bound to: 0 - type: integer 
+	Parameter C_ROUND_OUTPUT bound to: 0 - type: integer 
+	Parameter C_ROUND_PT bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'mult_gen_v12_0_19' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i4/hdl/mult_gen_v12_0_vh_rfs.vhd:21510' bound to instance 'U0' of component 'mult_gen_v12_0_19' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i4/synth/pidmc_mult_gen_v12_0_i4.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_mult_gen_v12_0_i4' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/pidmc_mult_gen_v12_0_i4/synth/pidmc_mult_gen_v12_0_i4.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xlmult__parameterized3' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1717]
+INFO: [Synth 8-638] synthesizing module 'sysgen_mux_de746a0a45' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:668]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_mux_de746a0a45' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:668]
+INFO: [Synth 8-638] synthesizing module 'sysgen_mux_3035f3b6f1' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:709]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_mux_3035f3b6f1' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:709]
+INFO: [Synth 8-638] synthesizing module 'sysgen_mux_e368ea745c' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:750]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_mux_e368ea745c' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:750]
+INFO: [Synth 8-638] synthesizing module 'sysgen_mux_9af7401eef' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:793]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_mux_9af7401eef' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:793]
+INFO: [Synth 8-638] synthesizing module 'sysgen_mux_28919abdf7' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:834]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_mux_28919abdf7' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:834]
+INFO: [Synth 8-638] synthesizing module 'sysgen_negate_7af552286e' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:873]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_negate_7af552286e' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:873]
+INFO: [Synth 8-638] synthesizing module 'sysgen_negate_0fae72f0eb' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:927]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_negate_0fae72f0eb' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:927]
+INFO: [Synth 8-638] synthesizing module 'sysgen_negate_785b69a48d' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:983]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_negate_785b69a48d' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:983]
+INFO: [Synth 8-638] synthesizing module 'sysgen_relational_c2e142f222' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1038]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_relational_c2e142f222' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1038]
+INFO: [Synth 8-638] synthesizing module 'sysgen_relational_8011da0b7b' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1067]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_relational_8011da0b7b' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1067]
+INFO: [Synth 8-638] synthesizing module 'sysgen_relational_8e9e835ed5' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1098]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_relational_8e9e835ed5' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1098]
+INFO: [Synth 8-638] synthesizing module 'sysgen_relational_a0c74db4d6' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1125]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_relational_a0c74db4d6' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1125]
+INFO: [Synth 8-638] synthesizing module 'pidmc_xlusamp' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1203]
+INFO: [Synth 8-113] binding component instance 'sel_gen' to cell 'FDSE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1246]
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'synth_reg' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg.vhd:20' bound to instance 'sampled_d_reg2' of component 'synth_reg' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1313]
+INFO: [Synth 8-638] synthesizing module 'synth_reg' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg.vhd:30]
+	Parameter width bound to: 32 - type: integer 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'srlc33e' declared at '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:22' bound to instance 'last_srlc33e' of component 'srlc33e' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'srlc33e' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:31]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-113] binding component instance 'u2' to cell 'FDE' [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'srlc33e' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/srl33e.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/synth_reg.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_xlusamp' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc_entity_declarations.vhd:1203]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_struct' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'pidmc' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/pidmc.vhd:1362]
+INFO: [Synth 8-256] done synthesizing module 'pidmc_bd_pidmc_1_0' (0#1) [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/synth/pidmc_bd_pidmc_1_0.vhd:82]
+WARNING: [Synth 8-6014] Unused sequential element clk_num_reg was removed.  [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ipshared/0813/hdl/xlclockdriver_rd.vhd:212]
+WARNING: [Synth 8-7129] Port clr in module synth_reg is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_clk in module pidmc_xlusamp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_clr in module pidmc_xlusamp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module sysgen_relational_a0c74db4d6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module sysgen_relational_a0c74db4d6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr in module sysgen_relational_a0c74db4d6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module sysgen_relational_8e9e835ed5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module sysgen_relational_8e9e835ed5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr in module sysgen_relational_8e9e835ed5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module sysgen_relational_8011da0b7b is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module sysgen_relational_8011da0b7b is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr in module sysgen_relational_8011da0b7b is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module sysgen_relational_c2e142f222 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module sysgen_relational_c2e142f222 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr in module sysgen_relational_c2e142f222 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module c_addsub_v12_0_16_lut6_legacy__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port add in module c_addsub_v12_0_16_lut6_legacy__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_in in module c_addsub_v12_0_16_lut6_legacy__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module c_addsub_v12_0_16_lut6_legacy__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bypass in module c_addsub_v12_0_16_lut6_legacy__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclr in module c_addsub_v12_0_16_lut6_legacy__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aset in module c_addsub_v12_0_16_lut6_legacy__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ainit in module c_addsub_v12_0_16_lut6_legacy__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sclr in module c_addsub_v12_0_16_lut6_legacy__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sset in module c_addsub_v12_0_16_lut6_legacy__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sinit in module c_addsub_v12_0_16_lut6_legacy__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_in in module c_addsub_v12_0_16_legacy__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_in in module c_addsub_v12_0_16_legacy__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a_signed in module c_addsub_v12_0_16_legacy__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port b_signed in module c_addsub_v12_0_16_legacy__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port C_IN in module c_addsub_v12_0_16_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port c_in[0] in module pidmc_xladdsub__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module pidmc_xladdsub__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr in module pidmc_xladdsub__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module pidmc_xladdsub__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst[0] in module pidmc_xladdsub__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port en[0] in module pidmc_xladdsub__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module sysgen_negate_785b69a48d is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module sysgen_negate_785b69a48d is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr in module sysgen_negate_785b69a48d is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module sysgen_negate_0fae72f0eb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module sysgen_negate_0fae72f0eb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr in module sysgen_negate_0fae72f0eb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module sysgen_negate_7af552286e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module sysgen_negate_7af552286e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr in module sysgen_negate_7af552286e is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module sysgen_mux_28919abdf7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module sysgen_mux_28919abdf7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr in module sysgen_mux_28919abdf7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module sysgen_mux_9af7401eef is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module sysgen_mux_9af7401eef is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr in module sysgen_mux_9af7401eef is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module sysgen_mux_3035f3b6f1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module sysgen_mux_3035f3b6f1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr in module sysgen_mux_3035f3b6f1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module sysgen_mux_e368ea745c is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module sysgen_mux_e368ea745c is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr in module sysgen_mux_e368ea745c is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module sysgen_mux_de746a0a45 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ce in module sysgen_mux_de746a0a45 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clr in module sysgen_mux_de746a0a45 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay_line__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_line__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_line__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay_line__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_line__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_line__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay_line__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_line__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_line__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay_line__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_line__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_line__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay_line__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_line__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_line__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay_line__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay_line__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay_line__parameterized14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[24] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[23] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[22] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[21] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[20] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[19] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[18] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[17] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[16] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[15] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[14] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[13] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[12] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[11] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[10] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[9] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[8] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[7] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[6] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[5] in module dsp__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port D_PORT[4] in module dsp__parameterized3 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:29 ; elapsed = 00:01:40 . Memory (MB): peak = 2484.695 ; gain = 754.660 ; free physical = 129 ; free virtual = 18299
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:01:40 . Memory (MB): peak = 2487.664 ; gain = 757.629 ; free physical = 129 ; free virtual = 18304
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:29 ; elapsed = 00:01:40 . Memory (MB): peak = 2487.664 ; gain = 757.629 ; free physical = 129 ; free virtual = 18304
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2490.633 ; gain = 0.000 ; free physical = 121 ; free virtual = 18299
+INFO: [Netlist 29-17] Analyzing 3016 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/constrs/pidmc.xdc] for cell 'U0'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/constrs/pidmc.xdc:4]
+Finished Parsing XDC File [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/constrs/pidmc.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.gen/sources_1/bd/pidmc_bd/ip/pidmc_bd_pidmc_1_0/constrs/pidmc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pidmc_bd_pidmc_1_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pidmc_bd_pidmc_1_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.runs/pidmc_bd_pidmc_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.runs/pidmc_bd_pidmc_1_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2574.395 ; gain = 0.000 ; free physical = 129 ; free virtual = 18288
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 661 instances were transformed.
+  BUF => LUT1: 1 instance 
+  FDE => FDRE: 32 instances
+  MULT_AND => LUT2: 628 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2574.430 ; gain = 0.000 ; free physical = 120 ; free virtual = 18288
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:39 ; elapsed = 00:01:52 . Memory (MB): peak = 2574.430 ; gain = 844.395 ; free physical = 141 ; free virtual = 18287
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z030sbg485-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:39 ; elapsed = 00:01:52 . Memory (MB): peak = 2574.430 ; gain = 844.395 ; free physical = 141 ; free virtual = 18287
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.runs/pidmc_bd_pidmc_1_0_synth_1/dont_touch.xdc, line 39).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/pidmc_struct/mult4/\comp4.core_instance4 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/pidmc_struct/mult3/\comp3.core_instance3 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/pidmc_struct/mult2/\comp2.core_instance2 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/pidmc_struct/mult1/\comp1.core_instance1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/pidmc_struct/mult/\comp0.core_instance0 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/pidmc_struct/addsub6/\comp4.core_instance4 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/pidmc_struct/addsub4/\comp3.core_instance3 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/pidmc_struct/addsub3/\comp2.core_instance2 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/pidmc_struct/addsub1/\comp1.core_instance1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/pidmc_struct/addsub2/\comp1.core_instance1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/pidmc_struct/addsub5/\comp1.core_instance1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/pidmc_struct/pid_summer/\comp1.core_instance1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/pidmc_struct/pi_summer/\comp1.core_instance1 . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/pidmc_struct/addsub/\comp0.core_instance0 . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:01:52 . Memory (MB): peak = 2574.430 ; gain = 844.395 ; free physical = 141 ; free virtual = 18286
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:43 ; elapsed = 00:01:56 . Memory (MB): peak = 2574.430 ; gain = 844.395 ; free physical = 128 ; free virtual = 18279
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 400 (col length:80)
+BRAMs: 530 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (pidmc_default_clock_driver/clockdriver_x0/clr_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pidmc.
+WARNING: [Synth 8-3332] Sequential element (pidmc_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[5].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pidmc.
+WARNING: [Synth 8-3332] Sequential element (pidmc_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[4].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pidmc.
+WARNING: [Synth 8-3332] Sequential element (pidmc_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[3].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pidmc.
+WARNING: [Synth 8-3332] Sequential element (pidmc_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[2].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pidmc.
+WARNING: [Synth 8-3332] Sequential element (pidmc_default_clock_driver/clockdriver/pipelined_ce_logic.ce_logic_pipeline[1].ce_logic_reg/latency_gt_0.fd_array[1].reg_comp/fd_prim_array[0].bit_is_0.fdre_comp) is unused and will be removed from module pidmc.
+WARNING: [Synth 8-3332] Sequential element (pidmc_struct/up_sample/sel_gen) is unused and will be removed from module pidmc.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:02:03 . Memory (MB): peak = 2574.430 ; gain = 844.395 ; free physical = 126 ; free virtual = 18276
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:02:10 . Memory (MB): peak = 2574.430 ; gain = 844.395 ; free physical = 131 ; free virtual = 18274
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:02:12 . Memory (MB): peak = 2574.430 ; gain = 844.395 ; free physical = 131 ; free virtual = 18273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:02 ; elapsed = 00:02:15 . Memory (MB): peak = 2574.430 ; gain = 844.395 ; free physical = 129 ; free virtual = 18273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:07 ; elapsed = 00:02:20 . Memory (MB): peak = 2574.430 ; gain = 844.395 ; free physical = 128 ; free virtual = 18270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:07 ; elapsed = 00:02:20 . Memory (MB): peak = 2574.430 ; gain = 844.395 ; free physical = 128 ; free virtual = 18270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:02:21 . Memory (MB): peak = 2574.430 ; gain = 844.395 ; free physical = 128 ; free virtual = 18270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:02:21 . Memory (MB): peak = 2574.430 ; gain = 844.395 ; free physical = 128 ; free virtual = 18270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:02:21 . Memory (MB): peak = 2574.430 ; gain = 844.395 ; free physical = 128 ; free virtual = 18270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:02:21 . Memory (MB): peak = 2574.430 ; gain = 844.395 ; free physical = 128 ; free virtual = 18270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp                 | C+A*B        | 25     | 17     | 48     | -      | 43     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp__parameterized0 | C+A*B        | 17     | 17     | 0      | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp__parameterized0 | PCIN>>17+A*B | 0      | 17     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized0 | PCIN+A*B     | 17     | 17     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized0 | PCIN+A*B     | 17     | 18     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized0 | PCIN+A*B     | 15     | 17     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized0 | PCIN>>17+A*B | 0      | 17     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized0 | PCIN>>17+A*B | 15     | 0      | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized0 | PCIN>>17+A*B | 15     | 0      | -      | -      | 43     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized1 | C+A*B        | 25     | 17     | 48     | -      | 43     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp__parameterized2 | C+A*B        | 17     | 17     | 0      | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp__parameterized2 | PCIN>>17+A*B | 0      | 15     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized2 | PCIN+A*B     | 17     | 17     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized2 | PCIN+A*B     | 17     | 15     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized2 | PCIN>>17+A*B | 17     | 0      | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized2 | PCIN>>17+A*B | 17     | 0      | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized2 | PCIN+A*B     | 25     | 17     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized2 | PCIN>>17+A*B | 0      | 15     | -      | -      | 43     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized3 | C+A*B        | 17     | 17     | 0      | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp__parameterized3 | PCIN>>17+A*B | 0      | 18     | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized3 | PCIN+A*B     | 17     | 17     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized3 | PCIN+A*B     | 17     | 18     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized3 | PCIN>>17+A*B | 17     | 0      | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized3 | PCIN>>17+A*B | 17     | 0      | -      | -      | 0      | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized3 | PCIN+A*B     | 25     | 17     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dsp__parameterized3 | PCIN>>17+A*B | 0      | 18     | -      | -      | 43     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUF      |     1|
+|2     |CARRY4   |   247|
+|3     |DSP48E1  |    26|
+|6     |LUT1     |   141|
+|7     |LUT2     |  1156|
+|8     |LUT3     |   632|
+|9     |LUT4     |   771|
+|10    |LUT5     |   136|
+|11    |LUT6     |   395|
+|12    |MULT_AND |   624|
+|13    |MUXCY    |  1149|
+|14    |XORCY    |  1172|
+|15    |FDE      |    32|
+|16    |FDRE     |   651|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:02:21 . Memory (MB): peak = 2574.430 ; gain = 844.395 ; free physical = 128 ; free virtual = 18271
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 222 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:08 ; elapsed = 00:02:20 . Memory (MB): peak = 2578.305 ; gain = 761.504 ; free physical = 5111 ; free virtual = 23323
+Synthesis Optimization Complete : Time (s): cpu = 00:01:13 ; elapsed = 00:02:25 . Memory (MB): peak = 2578.305 ; gain = 848.270 ; free physical = 5112 ; free virtual = 23325
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2578.305 ; gain = 0.000 ; free physical = 5114 ; free virtual = 23328
+INFO: [Netlist 29-17] Analyzing 3251 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2578.305 ; gain = 0.000 ; free physical = 5113 ; free virtual = 23331
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 965 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 309 instances
+  FDE => FDRE: 32 instances
+  MULT_AND => LUT2: 624 instances
+
+Synth Design complete | Checksum: 7151d2c9
+INFO: [Common 17-83] Releasing license: Synthesis
+290 Infos, 126 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:02:33 . Memory (MB): peak = 2578.305 ; gain = 1216.676 ; free physical = 5111 ; free virtual = 23329
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 6797.525; main = 1678.113; forked = 5166.238
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 12185.680; main = 2574.398; forked = 9611.281
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2590.402 ; gain = 0.000 ; free physical = 5111 ; free virtual = 23330
+INFO: [Common 17-1381] The checkpoint '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.runs/pidmc_bd_pidmc_1_0_synth_1/pidmc_bd_pidmc_1_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP pidmc_bd_pidmc_1_0, cache-ID = 1acf98746904f9ae
+INFO: [Coretcl 2-1174] Renamed 157 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2590.402 ; gain = 0.000 ; free physical = 5087 ; free virtual = 23323
+INFO: [Common 17-1381] The checkpoint '/xilinxworks/sysgen/pid_panda/netlist/ip/pidmc/src/ip_catalog/pidmc.runs/pidmc_bd_pidmc_1_0_synth_1/pidmc_bd_pidmc_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file pidmc_bd_pidmc_1_0_utilization_synth.rpt -pb pidmc_bd_pidmc_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 26 11:18:54 2024...
